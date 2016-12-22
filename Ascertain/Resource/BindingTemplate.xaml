@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:Ascertain.ViewModel"
+    xmlns:vw="clr-namespace:Ascertain.View">
+
+    <DataTemplate DataType="{x:Type vm:WorkspaceViewModel}">
+        <vw:WorkspaceView />
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type vm:ActionItemViewModel}">
+        <Button FontSize="16" Style="{DynamicResource ResourceKey=LinkButton}" Command="{Binding Path=ActionCommand}">
+            <Button.Content>
+                <TextBlock Style="{DynamicResource ResourceKey=LinkTextBlock}" Text="{Binding Path=Text}" />
+            </Button.Content>
+        </Button>
+    </DataTemplate>
+    
+</ResourceDictionary>

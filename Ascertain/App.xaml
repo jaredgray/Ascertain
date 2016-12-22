@@ -1,0 +1,14 @@
+﻿<Application x:Class="Ascertain.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/PDXCodeBits.Wpf.Controls;component/Themes/VisualStudioDarkTheme.xaml"/>
+                <ResourceDictionary Source="Resource/BindingTemplate.xaml" />
+                <ResourceDictionary Source="Resource/LayoutTemplates.xaml" />
+                <ResourceDictionary Source="Resource/ThemeSet.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

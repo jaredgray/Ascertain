@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99267CE6-5327-4EEF-B371-22500D8AE57D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ascertain.Mine</RootNamespace>
+    <AssemblyName>Ascertain.Mine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cavern\crc32.cs" />
+    <Compile Include="Cavern\EncodingFoundException.cs" />
+    <Compile Include="Cavern\HtmlAttribute.cs" />
+    <Compile Include="Cavern\HtmlAttributeCollection.cs" />
+    <Compile Include="Cavern\HtmlCmdLine.cs" />
+    <Compile Include="Cavern\HtmlCommentNode.cs" />
+    <Compile Include="Cavern\HtmlConsoleListener.cs" />
+    <Compile Include="Cavern\HtmlDocument.cs" />
+    <Compile Include="Cavern\HtmlDocument.PathMethods.cs" />
+    <Compile Include="Cavern\HtmlDocument.Xpath.cs" />
+    <Compile Include="Cavern\HtmlElementFlag.cs" />
+    <Compile Include="Cavern\HtmlEntity.cs" />
+    <Compile Include="Cavern\HtmlNameTable.cs" />
+    <Compile Include="Cavern\HtmlNode.cs" />
+    <Compile Include="Cavern\HtmlNode.Xpath.cs" />
+    <Compile Include="Cavern\HtmlNodeCollection.cs" />
+    <Compile Include="Cavern\HtmlNodeNavigator.cs" />
+    <Compile Include="Cavern\HtmlNodeType.cs" />
+    <Compile Include="Cavern\HtmlParseError.cs" />
+    <Compile Include="Cavern\HtmlParseErrorCode.cs" />
+    <Compile Include="Cavern\HtmlTextNode.cs" />
+    <Compile Include="Cavern\HtmlWeb.cs" />
+    <Compile Include="Cavern\HtmlWeb.Xpath.cs" />
+    <Compile Include="Cavern\HtmlWebException.cs" />
+    <Compile Include="Cavern\IOLibrary.cs" />
+    <Compile Include="Cavern\MixedCodeDocument.cs" />
+    <Compile Include="Cavern\MixedCodeDocumentCodeFragment.cs" />
+    <Compile Include="Cavern\MixedCodeDocumentFragment.cs" />
+    <Compile Include="Cavern\MixedCodeDocumentFragmentList.cs" />
+    <Compile Include="Cavern\MixedCodeDocumentFragmentType.cs" />
+    <Compile Include="Cavern\MixedCodeDocumentTextFragment.cs" />
+    <Compile Include="Cavern\NameValuePair.cs" />
+    <Compile Include="Cavern\NameValuePairList.cs" />
+    <Compile Include="Miner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Cavern\Trace.cs" />
+    <Compile Include="Cavern\Trace.FullFramework.cs" />
+    <Compile Include="Cavern\Utilities.cs" />
+    <Compile Include="Cavern\HtmlLink.cs" />
+    <Compile Include="Request.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>COPY /Y "$(TargetDir)Ascertain.Mine.dll" "$(SolutionDir)Ascertain\bin\Debug"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

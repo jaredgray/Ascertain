@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascertain", "Ascertain\Ascertain.csproj", "{35574E1E-BA14-4A04-A4DA-95B472C2E972}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B88D3A11-4B9A-4CB1-8D92-7402A67E6E9E} = {B88D3A11-4B9A-4CB1-8D92-7402A67E6E9E}
+		{2FCB05E5-B700-4F49-A10A-DC1279572536} = {2FCB05E5-B700-4F49-A10A-DC1279572536}
+		{99267CE6-5327-4EEF-B371-22500D8AE57D} = {99267CE6-5327-4EEF-B371-22500D8AE57D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascertain.Galexy", "Ascertain.Galexy\Ascertain.Galexy.csproj", "{B88D3A11-4B9A-4CB1-8D92-7402A67E6E9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{1D94D1A1-3596-4C3A-B0A1-037FC2AFCAB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascertain.Golf", "Modules\Ascertain.Golf\Ascertain.Golf.csproj", "{2FCB05E5-B700-4F49-A10A-DC1279572536}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascertain.MVVM.WPF", "Ascertain.MVVM.WPF\Ascertain.MVVM.WPF.csproj", "{1FB12C9E-94FD-411E-8579-5A3ED0918D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascertain.Mine", "Ascertain.Mine\Ascertain.Mine.csproj", "{99267CE6-5327-4EEF-B371-22500D8AE57D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ascertain.Athletics", "Modules\Ascertain.Athletics\Ascertain.Athletics.csproj", "{3B5011AA-AC68-48DE-B96B-52F33C5180B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35574E1E-BA14-4A04-A4DA-95B472C2E972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35574E1E-BA14-4A04-A4DA-95B472C2E972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35574E1E-BA14-4A04-A4DA-95B472C2E972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35574E1E-BA14-4A04-A4DA-95B472C2E972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88D3A11-4B9A-4CB1-8D92-7402A67E6E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88D3A11-4B9A-4CB1-8D92-7402A67E6E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88D3A11-4B9A-4CB1-8D92-7402A67E6E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88D3A11-4B9A-4CB1-8D92-7402A67E6E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FCB05E5-B700-4F49-A10A-DC1279572536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCB05E5-B700-4F49-A10A-DC1279572536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCB05E5-B700-4F49-A10A-DC1279572536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCB05E5-B700-4F49-A10A-DC1279572536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB12C9E-94FD-411E-8579-5A3ED0918D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB12C9E-94FD-411E-8579-5A3ED0918D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB12C9E-94FD-411E-8579-5A3ED0918D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB12C9E-94FD-411E-8579-5A3ED0918D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99267CE6-5327-4EEF-B371-22500D8AE57D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99267CE6-5327-4EEF-B371-22500D8AE57D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99267CE6-5327-4EEF-B371-22500D8AE57D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99267CE6-5327-4EEF-B371-22500D8AE57D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B5011AA-AC68-48DE-B96B-52F33C5180B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B5011AA-AC68-48DE-B96B-52F33C5180B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B5011AA-AC68-48DE-B96B-52F33C5180B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5011AA-AC68-48DE-B96B-52F33C5180B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2FCB05E5-B700-4F49-A10A-DC1279572536} = {1D94D1A1-3596-4C3A-B0A1-037FC2AFCAB3}
+		{3B5011AA-AC68-48DE-B96B-52F33C5180B2} = {1D94D1A1-3596-4C3A-B0A1-037FC2AFCAB3}
+	EndGlobalSection
+EndGlobal

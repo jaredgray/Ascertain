@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:Ascertain.Golf.ViewModel;assembly=Ascertain.Golf"
+    xmlns:vw="clr-namespace:Ascertain.Golf.View;assembly=Ascertain.Golf">
+
+
+    <DataTemplate DataType="{x:Type vm:GolfUIViewModel}">
+        <vw:GolfUIView />
+    </DataTemplate>
+
+    
+</ResourceDictionary>

@@ -1,0 +1,1 @@
+RenewCert.exe Ascertain_TemporaryKey.old.pfx Ascertain_TemporaryKey.pfx CN=ME2\jared
